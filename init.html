@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title> FRANCIELLY D. </title>
+    <title> Portfólio - FRANCIELLY D. </title>
 
     <style>
         body {
@@ -24,23 +24,33 @@
             background-color: blue;
         }*/
 
-        .imagec {
+        .main-container {
             display: flex;
-            justify-content: center;
-            /*alinahmento horizontal*/
-            align-items: flex-start;
-            /* alinhamneto vertival*/
-            height: 100dvh;
-            padding-top: 5px;
-            /*altura da margem do top*/
+            justify-content: space-between;
+            align-items: center;
+            height: 600px;
+            background-image: url('https://www.alura.com.br/artigos/assets/hello-world-em-varias-linguagens/imagem1.gif');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
         }
-        img{
-            max-width: 100%;
-            height: auto;
+
+        .main-container-left {
+            width: 250px;
+            height: 200px;
+            background-color: #0000ff;
+            padding-left: 50px;
+            margin-left: 200px;
+        }
+
+        .main-container-right {
+            width: 150px;
+            height: 400px;
+            background-color: #FFFF00;
         }
 
         footer {
-            background-color: #1309cd;
+            background-color: rgba(85, 80, 181, 0.744);
             color: white;
             width: 100px;
             height: 100px;
@@ -51,13 +61,10 @@
             position: fixed;
             bottom: 20px;
             right: 20px;
-            box-shadow: 0 4px 8px rgba(133, 133, 190, 0.2);
+            box-shadow: 0 4px 8px hsla(240, 35%, 77%, 0.2);
         }
 
-        footer p {
-            margin: 0;
-        }
-
+        
         h1 {
             text-align: left;
         }
@@ -72,7 +79,7 @@
         }
 
         p {
-            text-align: center;
+            text-align: left;
         }
 
         div {
@@ -90,55 +97,42 @@
             position: relative;
         }
 
-        .menu-suspenso {
-            position: fixed;
-            margin-top: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 35px;
-            background-color: rgb(149, 12, 212);
-            color: white;
-            font-weight: bold;
-            width: 50%;
-        }
-    </style>
+            </style>
 
 </head>
 
 <body>
-    <div class="imagec">
-        <img src="https://www.alura.com.br/artigos/assets/hello-world-em-varias-linguagens/imagem1.gif" />
-    </div>
 
     <h1>FRANCIELLY D.</h1>
 
-    <h2> Olá, </h2>
-    <h2>Sou  Francielly, estudante de Análise e<br> desenvolvimento
-        falarei sobre mim e projetos
-    </h2>
+    <div class="main-container">
+        <div class="main-container-left">
+            <h2> Olá, </h2>
+            <h2>Sou Francielly, sou estudante de Desenvolvimento<br> de Softwares
+             
+            </h2>
+        </div>
 
-    <div>
-        <!--fazer uma lista (ul- pontos, ol- numerada)-->
-        <li>sobre</li>
+        <div class="main-container-right">
+            <p>Lorem ipsum</p>
+            <li>sobre</li>
         <li>projetos</li>
         <li>curiosidades</li>
+        </div>
     </div>
-
-    <div>
+ 
+     <div>
         <article class="all-browsers">
             <h1>Entre em contato</h1>
         </article>
     </div>
 
-    
-
     <h4> <a href="pagina-vermelha.html">Voltar para pagina Vermelha</a></h4>
 
     <footer>
-        <p>IN
+        <p>In
             <!--criar hiperlink tag<a>-->
-            <a href="frandiasma@gepeto.com" target="_blank">INT</a>
+            <a href="frandiasma@gepeto.com"></a>
         </p>
     </footer>
 
