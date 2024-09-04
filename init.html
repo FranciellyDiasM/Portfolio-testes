@@ -5,7 +5,7 @@
 
     <style>
         body {
-            background-color: #0A1817;
+            background-color: #209f97;
             color: white;
         }
 
@@ -40,13 +40,35 @@
             height: 200px;
             background-color: #0000ff;
             padding-left: 50px;
-            margin-left: 200px;
+            margin-inline-start: 20px;
         }
 
         .main-container-right {
-            width: 150px;
-            height: 400px;
+            width: 250px;
+            height: 200px;
             background-color: #FFFF00;
+            padding-right: 10px;
+            margin-block-start: 10px;
+            margin-inline-end: 30px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .container-right {
+            width: 60%;
+            /* Ajuste para definir quanto do espaço o texto ocupará */
+        }
+
+        .container-img img {
+            width: 400px;
+            /* Ajuste o tamanho da imagem */
+            margin-left: 5px;
+            /* Espaçamento opcional entre o texto e a imagem */
         }
 
         footer {
@@ -64,7 +86,7 @@
             box-shadow: 0 4px 8px hsla(240, 35%, 77%, 0.2);
         }
 
-        
+
         h1 {
             text-align: left;
         }
@@ -96,8 +118,7 @@
             border-radius: 20%;
             position: relative;
         }
-
-            </style>
+    </style>
 
 </head>
 
@@ -109,19 +130,19 @@
         <div class="main-container-left">
             <h2> Olá, </h2>
             <h2>Sou Francielly, sou estudante de Desenvolvimento<br> de Softwares
-             
+
             </h2>
         </div>
 
         <div class="main-container-right">
             <p>Lorem ipsum</p>
             <li>sobre</li>
-        <li>projetos</li>
-        <li>curiosidades</li>
+            <li>projetos</li>
+            <li>curiosidades</li>
         </div>
     </div>
- 
-     <div>
+
+    <div>
         <article class="all-browsers">
             <h1>Entre em contato</h1>
         </article>
@@ -135,6 +156,20 @@
             <a href="frandiasma@gepeto.com"></a>
         </p>
     </footer>
+
+    <div class="container">
+        <div class="container-right">
+            <h1>Quem sou eu?</h1>
+            <h2>Sou Francielly Dias e estou mergulhando no mundo do desenvolvimento de software.
+                Estou aprendendo a criar ferramentas e aplicações usando Java, Python, Kotlin, HTML e CSS.
+                Cada novo conceito que descubro me deixa animada, pois adoro o processo de aprendizado e a
+                sensação de dominar novas habilidades. É incrível ver o que posso criar com essas
+                tecnologias, e isso me motiva a ir ainda mais longe. Estou determinada a continuar
+                crescendo e aprendendo cada vez mais, sempre buscando aprimorar meu conhecimento
+                e me tornar uma desenvolvedora ainda melhor.</h2>
+        </div>
+        <div class="container-img">
+            <img src="https://www.brasilcode.com.br/wp-content/uploads/2023/11/hello-world.webp" alt="Imagem ilustrativa sobre desenvolvimento de software">    </div>
 
 </body>
 
