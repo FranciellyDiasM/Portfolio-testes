@@ -3,18 +3,16 @@
 <head>
     <title> FRANCIELLY D. </title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Footer em Forma de Bola</title>
-    <link rel="stylesheet" href="styles.css">
-
     <style>
         body {
-            background-color: white;
-            color: rgb(14, 13, 13);
+            background-color: #0A1817;
+            color: white;
+        }
+
+        body footer {
             margin: 0;
             padding: 0;
-            height: 100vh;
+            height: 10vh;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
@@ -26,8 +24,19 @@
             background-color: blue;
         }*/
 
-        .container {
-            text-align: center;
+        .imagec {
+            display: flex;
+            justify-content: center;
+            /*alinahmento horizontal*/
+            align-items: flex-start;
+            /* alinhamneto vertival*/
+            height: 100dvh;
+            padding-top: 5px;
+            /*altura da margem do top*/
+        }
+        img{
+            max-width: 100%;
+            height: auto;
         }
 
         footer {
@@ -42,7 +51,7 @@
             position: fixed;
             bottom: 20px;
             right: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px rgba(133, 133, 190, 0.2);
         }
 
         footer p {
@@ -76,7 +85,9 @@
             margin: 0;
             padding: 10px;
             background-color: rgb(55, 80, 189);
-            width: 60%;
+            width: 10%;
+            border-radius: 20%;
+            position: relative;
         }
 
         .menu-suspenso {
@@ -96,39 +107,31 @@
 </head>
 
 <body>
+    <div class="imagec">
+        <img src="https://www.alura.com.br/artigos/assets/hello-world-em-varias-linguagens/imagem1.gif" />
+    </div>
 
-    <h1>Página Branca</h1>
+    <h1>FRANCIELLY D.</h1>
 
-    <footer class="menu-suspenso">
-        <h1>Aprendendo HTML</h1>
+    <h2> Olá, </h2>
+    <h2>Sou  Francielly, estudante de Análise e<br> desenvolvimento
+        falarei sobre mim e projetos
+    </h2>
 
-    </footer>
-
-    <h2> Escrever coisas </h2>
-    <h2>Experimentando coisas</h2>
-
-    <div>Fazer listas:
-
+    <div>
         <!--fazer uma lista (ul- pontos, ol- numerada)-->
-        <ul>
-            <li> Pego os ovos</li>
-            <li>quebro os ovos</li>
-            <li>Misturo os ovos na frigideira</li>
-        </ul>
+        <li>sobre</li>
+        <li>projetos</li>
+        <li>curiosidades</li>
     </div>
 
     <div>
         <article class="all-browsers">
             <h1>Entre em contato</h1>
-            
-            </article>
-
         </article>
     </div>
 
-    <div class="container">
-        <img src="https://www.fascinations.com/content/images/thumbs/0016963_doctor-who-tardis_620.png" width="100px" />
-    </div>
+    
 
     <h4> <a href="pagina-vermelha.html">Voltar para pagina Vermelha</a></h4>
 
