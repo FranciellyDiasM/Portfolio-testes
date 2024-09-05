@@ -2,35 +2,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #0A1817;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .background {
-    background-size: 60%;
-    /* Ajuste o tamanho conforme necessário */
-    background-position: center;
-    /* Centraliza a imagem de fundo */
-    background-repeat: no-repeat;
-    /* Evita que a imagem se repita */
-    height: 100vh;
-    width: 100%;
-    padding: 0 8%;
+    padding:0 5%;
     /* Garante que o conteúdo tenha padding em relação à tela */
-    position: relative;
-    background-color: black;
-
 }
 
 .conteudo {
     display: flex;
     gap: 100px;
+    margin-top: 100px;
 }
 
-.img-test{
-    width: 500px;
+.img-test {
+    width: 700px;
     max-width: 100%;
     height: 100%;
+    margin-top: -250px;
 }
+
 /* Manter o texto próximo às margens da tela */
 nav h2 {
     color: rgb(10, 13, 207);
@@ -73,6 +66,59 @@ nav ul li a :hover {
     transform: scale(1.2);
 }
 
+.main {
+    transform: translateY(-50);
+    max-width: fit-content;
+}
+
+.main span {
+    color: brown;
+}
+
+.contato-envie {
+    background-color: rgb(32, 42, 180);
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+
+.contato-envie :hover {
+    transform: scale(.2s);
+}
+
+.contato-envie form {
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+
+.contato-envie form input:first-child {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #2d209e;
+    border-radius: 30px;
+    outline: none;
+}
+
+.contato-envie form input:last-child {
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #3b22aa;
+    color: #fff;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    right: 6px;
+    top: 6px;
+
+}
+
 .btn {
     background-color: rgb(32, 42, 180);
     color: antiquewhite;
@@ -85,15 +131,6 @@ nav ul li a :hover {
 
 .btn :hover {
     transform: scale(.2s);
-}
-
-.main {
-    transform: translateY(-50);
-    max-width: fit-content;
-}
-
-.main span {
-    color: brown;
 }
 
 h1 {
@@ -222,6 +259,7 @@ button {
 }
 
 button:hover {
+    /* Muda a cor do botao */
     background-color: transparent;
     border: 2px solid #1b1a79;
     cursor: pointer;
@@ -301,7 +339,7 @@ footer {
     position: relative;
     width: 100%;
     height: 400px;
-    background-color: #101010;
+    background-color: #25154f;
     display: flex;
     flex-direction: column;
     align-items: center;
