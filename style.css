@@ -4,16 +4,34 @@
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 .background {
-    background-image: url("img/imagem1.gif");
     background-size: 60%;
+    /* Ajuste o tamanho conforme necessário */
     background-position: center;
+    /* Centraliza a imagem de fundo */
     background-repeat: no-repeat;
+    /* Evita que a imagem se repita */
     height: 100vh;
     width: 100%;
     padding: 0 8%;
+    /* Garante que o conteúdo tenha padding em relação à tela */
+    position: relative;
+    background-color: black;
 
 }
+
+.conteudo {
+    display: flex;
+    gap: 100px;
+}
+
+.img-test{
+    width: 500px;
+    max-width: 100%;
+    height: 100%;
+}
+/* Manter o texto próximo às margens da tela */
 nav h2 {
     color: rgb(10, 13, 207);
     font-size: 35px;
@@ -26,7 +44,9 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 55px 0;
+    /* Ajuste o padding conforme necessário */
     width: 100%;
+    /* Garante que o nav ocupe toda a largura */
     position: relative;
 }
 
@@ -68,11 +88,8 @@ nav ul li a :hover {
 }
 
 .main {
-    position: absolute;
-    top: 50%;
-    left: 10%;
     transform: translateY(-50);
-
+    max-width: fit-content;
 }
 
 .main span {
